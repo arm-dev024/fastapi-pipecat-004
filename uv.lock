@@ -3156,19 +3156,11 @@ name = "vercel-fastapi-starter"
 version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
-<<<<<<< HEAD
-    { name = "pipecat-ai", extra = ["deepgram", "openai", "runner", "webrtc"] },
-]
-
-[package.metadata]
-requires-dist = [{ name = "pipecat-ai", extras = ["deepgram", "openai", "runner", "webrtc"] }]
-=======
     { name = "pipecat-ai", extra = ["daily", "deepgram", "local-smart-turn-v3", "openai", "runner", "silero", "webrtc"] },
 ]
 
 [package.metadata]
 requires-dist = [{ name = "pipecat-ai", extras = ["daily", "deepgram", "local-smart-turn-v3", "openai", "runner", "silero", "webrtc"] }]
->>>>>>> parent of 86396f1 (remove daily)
 
 [[package]]
 name = "wait-for2"

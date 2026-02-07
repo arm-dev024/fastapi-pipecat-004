@@ -3,9 +3,5 @@ name = "vercel-fastapi-starter"
 version = "0.1.0"
 requires-python = ">=3.10"
 dependencies = [
-<<<<<<< HEAD
-  "pipecat-ai[deepgram,openai,runner,webrtc]",
-=======
   "pipecat-ai[daily,deepgram,local-smart-turn-v3,openai,runner,silero,webrtc]",
->>>>>>> parent of 86396f1 (remove daily)
 ]
