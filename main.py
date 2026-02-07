@@ -15,10 +15,8 @@ from fastapi.responses import RedirectResponse
 from loguru import logger
 from pipecat_ai_small_webrtc_prebuilt.frontend import SmallWebRTCPrebuiltUI
 
-# uv add local-smart-turn-v3
-# from pipecat.audio.turn.smart_turn.local_smart_turn_v3 import LocalSmartTurnAnalyzerV3
-# uv add silero
-# from pipecat.audio.vad.silero import SileroVADAnalyzer
+from pipecat.audio.turn.smart_turn.local_smart_turn_v3 import LocalSmartTurnAnalyzerV3
+from pipecat.audio.vad.silero import SileroVADAnalyzer
 from pipecat.frames.frames import LLMRunFrame
 from pipecat.pipeline.pipeline import Pipeline
 from pipecat.pipeline.runner import PipelineRunner
@@ -86,13 +84,13 @@ async def run_example(webrtc_connection: SmallWebRTCConnection):
         context,
         user_params=LLMUserAggregatorParams(
             user_turn_strategies=UserTurnStrategies(
-                # stop=[
-                #     TurnAnalyzerUserTurnStopStrategy(
-                #         turn_analyzer=LocalSmartTurnAnalyzerV3()
-                #     )
-                # ]
+                stop=[
+                    TurnAnalyzerUserTurnStopStrategy(
+                        turn_analyzer=LocalSmartTurnAnalyzerV3()
+                    )
+                ]
             ),
-            # vad_analyzer=SileroVADAnalyzer(),
+            vad_analyzer=SileroVADAnalyzer(),
         ),
     )
 
