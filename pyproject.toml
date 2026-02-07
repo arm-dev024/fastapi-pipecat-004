@@ -3,5 +3,5 @@ name = "vercel-fastapi-starter"
 version = "0.1.0"
 requires-python = ">=3.10"
 dependencies = [
-  "fastapi[standard]>=0.121.0",
+  "pipecat-ai[daily,deepgram,local-smart-turn-v3,openai,runner,silero,webrtc]",
 ]
