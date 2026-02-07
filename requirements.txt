@@ -412,6 +412,12 @@ cryptography==46.0.4 \
     # via
     #   aiortc
     #   pyopenssl
+daily-python==0.23.0 \
+    --hash=sha256:00b22041ef85556cc06262f9b8e39b686bdf37d50219d07542d7a2f9c3d413d4 \
+    --hash=sha256:21a59b1730ae047f2335b9fdcf8ebb9fe05c3768dc4239ec955461f3f78476b0 \
+    --hash=sha256:74998c9aabeccf8306def27219eb943df5a268f26ba7e25e0a105ced9425591a \
+    --hash=sha256:ce80746f5cba434371a9cb9995d8c4ec19d1490bd993b7dfd35356d81bd68425
+    # via pipecat-ai
 dataclasses-json==0.6.7 \
     --hash=sha256:0dbf33f26c8d5305befd61b39d2b3414e8a407bedc2834dea9b8d642666fb40a \
     --hash=sha256:b6b3e528266ea45b9535223bc53ca645f5208833c29229e847b3f26a1cc55fc0
